@@ -7,8 +7,8 @@ services:
       - ./priv/Caddyfile:/etc/caddy/Caddyfile
       - ./priv/pki:/data/caddy/pki
     ports:
-      - 80:80
-      - 443:443
+      - 8180:80
+      - 8143:443
     networks:
       app:
         ipv4_address: 172.28.0.99
